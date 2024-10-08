@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <children>
+        <!-- Customer Information Section -->
+        <Label text="Customer Information"/>
+        <TextField fx:id="nameField" promptText="Customer Name"/>
+        <TextField fx:id="phoneField" promptText="Phone Number"/>
+
+        <!-- Pizza Size Section -->
+        <Label text="Pizza Size"/>
+        <ChoiceBox fx:id="sizeChoiceBox"/>
+
+        <!-- Crust Type Section -->
+        <Label text="Crust Type"/>
+        <ChoiceBox fx:id="crustChoiceBox"/>
+
+        <!-- Toppings Section ($1.10 Each) -->
+        <Label text="Toppings ($1.10 Each)"/>
+        <HBox spacing="10">
+            <children>
+                <CheckBox fx:id="pineapple" text="Pineapple"/>
+                <CheckBox fx:id="extraCheese" text="Extra Cheese"/>
+                <CheckBox fx:id="driedShrimps" text="Dried Shrimps"/>
+                <CheckBox fx:id="mushrooms" text="Mushrooms"/>
+                <CheckBox fx:id="anchovies" text="Anchovies"/>
+                <CheckBox fx:id="sunDriedTomatoes" text="Sun Dried Tomatoes"/>
+                <CheckBox fx:id="dacon" text="Dacon"/>
+                <CheckBox fx:id="spinach" text="Spinach"/>
+                <CheckBox fx:id="roastedGarlic" text="Roasted Garlic"/>
+                <CheckBox fx:id="jalapeno" text="Jalapeno"/>
+            </children>
+        </HBox>
+
+        <!-- Meat Toppings Section ($2.15 Each) -->
+        <Label text="Meat Toppings ($2.15 Each)"/>
+        <HBox spacing="10">
+            <children>
+                <CheckBox fx:id="groundBeef" text="Ground Beef"/>
+                <CheckBox fx:id="shreddedChicken" text="Shredded Chicken"/>
+                <CheckBox fx:id="grilledChicken" text="Grilled Chicken"/>
+                <CheckBox fx:id="pepperoni" text="Pepperoni"/>
+                <CheckBox fx:id="ham" text="Ham"/>
+                <CheckBox fx:id="bacon" text="Bacon"/>
+            </children>
+        </HBox>
+
+        <!-- Quantity Section -->
+        <Label text="Quantity"/>
+        <TextField fx:id="quantityField" promptText="Quantity"/>
+
+        <!-- Buttons Section -->
+        <HBox spacing="10">
+            <children>
+                <Button fx:id="placeOrderButton" text="Place Order" onAction="#handlePlaceOrder"/>
+                <Button fx:id="clearButton" text="Clear" onAction="#handleClearFields"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>
