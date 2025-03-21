@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AdminLoginController">
+    <top>
+        <Text text="Admin Login" style="-fx-font-size: 24px; -fx-font-weight: bold;" alignment="CENTER" />
+    </top>
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <TextField fx:id="usernameField" promptText="Enter Username" />
+            <PasswordField fx:id="passwordField" promptText="Enter Password" />
+            <Button text="Login" fx:id="loginButton" />
+            <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;" />
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back to Home" fx:id="backButton" alignment="CENTER" />
+    </bottom>
+</BorderPane>

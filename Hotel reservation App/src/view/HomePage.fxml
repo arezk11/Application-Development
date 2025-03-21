@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.HomePageController">
+    <top>
+        <VBox spacing="10" alignment="CENTER">
+            <Text text="Welcome to ABC Hotel" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+            <Text text="Your Comfort, Our Priority" style="-fx-font-size: 16px; -fx-font-style: italic;" />
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Button text="Book Now" fx:id="bookNowButton" style="-fx-font-size: 18px;" />
+            <Button text="Admin Login" fx:id="adminLoginButton" style="-fx-font-size: 18px;" />
+        </VBox>
+    </center>
+    <bottom>
+        <Label text="© 2024 ABC Hotel. All rights reserved." alignment="CENTER" />
+    </bottom>
+</BorderPane>

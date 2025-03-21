@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardController" prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Top Section -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #f0f8ff;">
+            <Label fx:id="adminContentLabel" text="Welcome to Admin Dashboard" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <!-- Center Section -->
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <Button fx:id="viewBookingsButton" text="View Bookings" onAction="#viewBookings" prefWidth="200.0" />
+            <Button fx:id="manageRoomsButton" text="Manage Rooms" onAction="#manageRooms" prefWidth="200.0" />
+            <Button fx:id="searchGuestsButton" text="Search Guests" onAction="#searchGuests" prefWidth="200.0" />
+            <Button fx:id="generateBillsButton" text="Generate Bills" onAction="#generateBills" prefWidth="200.0" />
+        </VBox>
+    </center>
+
+    <!-- Bottom Section -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+            <Button fx:id="exitToMainButton" text="Exit to Main Menu" onAction="#exitToMain" style="-fx-text-fill: red;" prefWidth="150.0" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

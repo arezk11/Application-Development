@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenerateBillsController" prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Top Section -->
+    <top>
+        <Label text="Generate Bills" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-padding: 20;" alignment="CENTER" />
+    </top>
+
+    <!-- Center Section -->
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <Label text="Select a Room:" />
+            <ChoiceBox fx:id="roomChoiceBox" prefWidth="200.0" />
+            <Button text="Generate Bill" onAction="#generateBill" prefWidth="150.0" />
+        </VBox>
+    </center>
+</BorderPane>
